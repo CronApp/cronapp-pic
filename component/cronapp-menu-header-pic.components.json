@@ -1,0 +1,9 @@
+{
+    "name": "crn-menu-header-pic",
+    "text_pt_BR": "Menu Header",
+    "text_en_US": "Menu Header",
+    "class": "adjust-icon mdi mdi-pound",
+    "wrapper": false,
+    "templateURL": "src/main/webapp/node_modules/cronapp-pic/src/component/crnCronappMenuHeaderPIC.template.html"
+  }
+  
