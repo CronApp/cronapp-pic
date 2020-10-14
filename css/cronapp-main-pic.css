@@ -197,7 +197,7 @@ input[type=radio]:focus,
     margin: 0;
     display: inline-block;
     padding-left: 50px;
-    background: url('../img/logo_camara_peq.png') no-repeat 10px center; 
+    background: url(../img/logo_camara_peq.png) no-repeat 10px center; 
     overflow: hidden;
     width: 65%;
 }
@@ -352,7 +352,7 @@ input[type=radio]:focus,
     /*GRID*/
         /*correcao visualização lowcode*/
         div.k-grid-header {
-        background-color: #33591E;;
+        background-color: #33591E;
     }
     .crn-grid-title {
         float: left;
@@ -360,10 +360,16 @@ input[type=radio]:focus,
         font-size: 26px;
     }
     .k-grid-toolbar .k-button {
-        background-color: #114c85;
+        background-color: #33591E;
         text-transform: uppercase;
         color: #fff;
         box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+        transition: 200ms;
+    }
+    .k-grid-toolbar .k-button:hover {
+        background-color: #fff;
+        text-transform: uppercase;
+        color: #173010;
         transition: 200ms;
     }
     /*teste*/
@@ -526,52 +532,76 @@ input[type=radio]:focus,
     /*Fim Banner*/
 
     /*Data*/
+        .bootstrap-datetimepicker-widget.dropdown-menu {
+            background-color: #fff;
+            box-shadow: 0 15px 10px rgba(0,0,0,.7);
+        }
         /*seta mes ano seta*/
         .bootstrap-datetimepicker-widget table thead tr:first-child th {
             cursor: pointer;
-            color: #fff;
-            font-weight: 400;
+            color: #33591E;
+            font-weight: 700;
+            text-transform: uppercase;
         }
         .bootstrap-datetimepicker-widget table thead tr th :hover {
-            background: black;
+            background: #000;
         }
         /*dias da Semana*/
         .table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
             padding: 5px;
-            color: #fff;
-            font-weight: 400;
+            color: #333;
+            text-shadow: 0 1px 1px #fff;
+            font-weight: 700;
         }
         /*dias ativos*/
         .bootstrap-datetimepicker-widget table td.day {
-            height: 20px;
             line-height: 20px;
-            width: 20px;
             color: #537e42;
+            font-weight: 700;
+            font-size: 1.2em;
+            width: 2.6em;
+            height: 2.6em;
+            line-height: 20px;
+            border: 1px solid #cfcfcf;
+            border-radius: 0;
         }
         /*data selecionada*/
         .bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
-            background-color: #173010;
-            border: 1px solid #fff;
-            color: #fff;
+            background-color: transparent;
+            border: 1px solid #537e42;
+            outline: 1px solid #537e42;
+            color: #33591E;
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+        }
+        .bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+            color: #537e42;
             text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
         }
         /*dias desativados*/
         .bootstrap-datetimepicker-widget table td.old, .bootstrap-datetimepicker-widget table td.new {
-            color: #33591E;
+            color: #BDBDBD;
+            font-weight: 300;
         }
         /*footer date*/
         .bootstrap-datetimepicker-widget .picker-switch td span {
             line-height: 2.5;
             height: 2.5em;
             width: 100%;
-            color: #fff;
+            color: #537e42;
+            background: #fff;
         }
-        .bootstrap-datetimepicker-widget .picker-switch td span :hover {
+        .bootstrap-datetimepicker-widget .picker-switch td span:hover {
             line-height: 2.5;
             height: 2.5em;
             width: 100%;
             color: #fff;
-            background: #173010 !important;
+            background: #537e42 !important;
+        }
+        /*seleção mês*/
+        .bootstrap-datetimepicker-widget table td span.active {
+            background-color: #537e42;
+            color: #fff;
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
         }
     /*Fim Data*/
 
@@ -580,6 +610,23 @@ input[type=radio]:focus,
         .bootstrap-datetimepicker-widget table td span {
             color: #537e42;
         }
+
+        /**/
+    .bootstrap-datetimepicker-widget table {
+        border-spacing: 2px;
+        border-collapse: separate;
+    }
+    .bootstrap-datetimepicker-widget table td.today:before {
+    content: '';
+    display: inline-block;
+    border: solid transparent;
+    border-width: 0 0 7px 7px;
+    border-bottom-color: #33591E;
+    border-top-color: rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}
         /*lista de opções*/
         .k-radio:checked+.k-radio-label:after {
             background-color: #537e42;
@@ -670,15 +717,37 @@ input[type=radio]:focus,
                 border: 1px solid #fff;
             }
 
+
     /*FIM Tabela Simples*/
     /*Caroussel*/
+        /*texto carousel*/
+        .carousel-caption h2 {
+            font-size: 16px;
+        }
     .carousel-indicators li {
         text-indent: -999px;
         cursor: pointer;
-        background-color: #507c3f \9;
-        background-color: #33591E;
+        background-color: #ffff;
         border: 1px solid #507c3f;
-        border-radius: 10px;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+    }
+    .carousel-indicators .active {
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #507c3f;
+        border: 1px solid #507c3f;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+    }
+    .carousel-indicators::before, .carousel-indicators::after {
+    content: ' ';
+    display: table;
+    }
+    .carousel-indicators::after{
+    clear: both;
     }
     /*lista simples*/
     .h3 {
@@ -772,12 +841,12 @@ input[type=radio]:focus,
     /*Rodapé*/
     .panel-footer {
         background: #507c3f;
-        background: url(../img/bg_rodape.png) no-repeat 95% center, -moz-linear-gradient(left, #507c3f 55%, #173010 100%);
-        background: url(../img/bg_rodape.png) no-repeat 95% center, -webkit-gradient(linear, left top, right top, color-stop(55%,#507c3f), color-stop(100%,#173010));
-        background: url(../img/bg_rodape.png) no-repeat 95% center, -webkit-linear-gradient(left, #507c3f 55%,#173010 100%);
-        background: url(../img/bg_rodape.png) no-repeat 95% center, -o-linear-gradient(left, #507c3f 55%,#173010 100%);
-        background: url(../img/bg_rodape.png) no-repeat 95% center, -ms-linear-gradient(left, #507c3f 55%,#173010 100%);
-        background: url(../img/bg_rodape.png) no-repeat 95% center, linear-gradient(to right, #507c3f 55%,#173010 100%);
+        background: url(../images/bg_rodape.png) no-repeat 95% center, -moz-linear-gradient(left, #507c3f 55%, #173010 100%);
+        background: url(../images/bg_rodape.png) no-repeat 95% center, -webkit-gradient(linear, left top, right top, color-stop(55%,#507c3f), color-stop(100%,#173010));
+        background: url(../images/bg_rodape.png) no-repeat 95% center, -webkit-linear-gradient(left, #507c3f 55%,#173010 100%);
+        background: url(../images/bg_rodape.png) no-repeat 95% center, -o-linear-gradient(left, #507c3f 55%,#173010 100%);
+        background: url(../images/bg_rodape.png) no-repeat 95% center, -ms-linear-gradient(left, #507c3f 55%,#173010 100%);
+        background: url(../images/bg_rodape.png) no-repeat 95% center, linear-gradient(to right, #507c3f 55%,#173010 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#507c3f', endColorstr='#173010',GradientType=1 );
         color: #FFF;
         border-bottom: 3px solid #4f7b3e;
@@ -798,6 +867,9 @@ input[type=radio]:focus,
         line-height: inherit;
         padding: 14px 15px 14px 10px;
     }
+
+
+
 @media(max-width:768px) {
     .navbar-nav {
         display: inline-block;
@@ -831,7 +903,7 @@ input[type=radio]:focus,
         text-transform: none;
     }
     .navbar-header {
-        background: url() no-repeat right -15px, url( ../img/logo_camara_peq.png) 30px 12px no-repeat, -webkit-gradient(linear, left top, right top, color-stop(0, #173010), color-stop(45%, #507c3f));
+        background: url() no-repeat right -15px, url(../img/logo_camara_peq.png) 30px 12px no-repeat, -webkit-gradient(linear, left top, right top, color-stop(0, #173010), color-stop(45%, #507c3f));
         background: url() no-repeat right -15px, url(../img/logo_camara_peq.png) 30px 12px no-repeat, -webkit-linear-gradient(left, #173010 0, #507c3f 45%);
         background: url() no-repeat right -15px, url(../img/logo_camara_peq.png) 30px 12px no-repeat, -o-linear-gradient(left, #173010 0, #507c3f 45%);
         background: url() no-repeat right -15px, url(../img/logo_camara_peq.png) 30px 12px no-repeat, -ms-linear-gradient(left, #173010 0, #507c3f 45%);
@@ -866,6 +938,9 @@ input[type=radio]:focus,
     }
     .mobile-menu-no {
         display: none;
+    }
+    .carousel-indicators {
+        bottom: 0px;
     }
 }
 @media only screen and (max-width: 600px) {
