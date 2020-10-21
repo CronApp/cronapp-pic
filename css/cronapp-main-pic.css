@@ -22,7 +22,7 @@ a:focus, a:hover {
     border: 0px none #ffffff;
     border-left: 1px solid #537e42;
     }
-.k-block ::selection, .k-panel ::selection, .k-widget ::selection {
+.k-block ::selection, .k-panel ::selection, .k-widget ::selection, {
     background-color: #537e42 !important;
     color: #fff !important;
     }
@@ -190,7 +190,7 @@ input[type=radio]:focus,
 .jumbotron-fluid {
     min-height: 135px;
 }
-.nomeAplicacao, .identAplicacao {
+.crn-custom-header--nomeAplicacao, .crn-custom-header--identAplicacao {
     float: left;
     font-size: 1.4em;
     padding-top: 10px;
@@ -746,7 +746,7 @@ input[type=radio]:focus,
     content: ' ';
     display: table;
     }
-    .carousel-indicators::after{
+    .carousel-indicators::after
     clear: both;
     }
     /*lista simples*/
@@ -924,7 +924,7 @@ input[type=radio]:focus,
         background: url(../img/bg_topo.png) no-repeat right -15px, url(../img/logo-camara-transp.png) 30px 12px no-repeat, -ms-linear-gradient(left, #173010 0, #507c3f 45%);
         background: url(../img/bg_topo.png) no-repeat right -15px, url(../img/logo-camara-transp.png) 30px 12px no-repeat, linear-gradient(to right, #173010 0, #507c3f 45%);
     }
-    .nomeAplicacao, .identAplicacao {
+    .crn-custom-header--nomeAplicacao, .crn-custom-header--identAplicacao {
         padding-top: 60px;
         padding-left: 0;
         display: block;
@@ -979,5 +979,46 @@ input[type=radio]:focus,
         padding-left: -15px;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 768px) {
+	.crn-custom-header .crn-custom-header--topoAplicacao {
+		min-height: 135px;
+	}
+    .crn-custom-header--topoAplicacao{
+        background: url(../img/bg_topo.png) no-repeat right -15px, url(../img/logo-camara-transp.png) 30px 12px no-repeat, -webkit-gradient(linear, left top, right top, color-stop(0, #173010), color-stop(45%, #507c3f));
+        background: url(../img/bg_topo.png) no-repeat right -15px, url(../img/logo-camara-transp.png) 30px 12px no-repeat, -webkit-linear-gradient(left, #173010 0, #507c3f 45%);
+        background: url(../img/bg_topo.png) no-repeat right -15px, url(../img/logo-camara-transp.png) 30px 12px no-repeat, -o-linear-gradient(left, #173010 0, #507c3f 45%);
+        background: url(../img/bg_topo.png) no-repeat right -15px, url(../img/logo-camara-transp.png) 30px 12px no-repeat, -ms-linear-gradient(left, #173010 0, #507c3f 45%);
+        background: url(../img/bg_topo.png) no-repeat right -15px, url(../img/logo-camara-transp.png) 30px 12px no-repeat, linear-gradient(to right, #173010 0, #507c3f 45%);
+    }
+
+    .crn-custom-header--nome {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    color: #FFF;
+    border-color: #d6dc48 !important;
+    padding: 0.25em 0.4em;
+    margin-left: 0.35em;
+    border-left: 2px solid;
+    font-size: 0.7em !important;
+    display: inline;
+    }
+    
+    .crn-custom-header--sigla {
+    color: #FFF;
+    font-size: 1em;
+    font-weight: bold;
+    white-space:nowrap;
+}
 }
 
