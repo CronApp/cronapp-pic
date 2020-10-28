@@ -31,7 +31,6 @@ a:focus, a:hover {
 
 .panel-primary {
     border: none;
-    color: #71767A;
     }
 /*Modal Login*/
 .modal-header {
@@ -497,7 +496,7 @@ input[type=radio]:focus,
     }
 
 
-        /*Acordeão*/
+    /*Acordeão*/
     .panel-default>.panel-heading {
         background-color: #f3f3ef;
         border-bottom: 1px solid #c8c8c8;
@@ -506,13 +505,15 @@ input[type=radio]:focus,
         background-color: #33591E;
         border-color: #537e42; */
     }
+    div.panel-body {
+        color: red !important;
+    }
     .lead {
         margin: 1px 0px;
-        font-size: 15px !important;
-        text-align: left !important;
+        font-size: 16px !important;
         line-height: 1.4;
-        color: #71767A !important;
-        font-weight: 700;
+        color: #537e42 !important;
+        font-weight: 500;
     }
     /*FIM Acordeão*/
     
@@ -746,7 +747,7 @@ input[type=radio]:focus,
     content: ' ';
     display: table;
     }
-    .carousel-indicators::after
+    .carousel-indicators::after{
     clear: both;
     }
     /*lista simples*/
@@ -754,6 +755,46 @@ input[type=radio]:focus,
         font-size: 24px;
         color: #537e42;
     }
+    
+    /* Scheduler */
+    .k-scheduler-toolbar, .k-scheduler-toolbar, .k-scheduler-toolbar a.k-link {
+        background-color: #33591E !important;
+        color: #fff;
+    }​
+    .k-scheduler-views * {​
+        background-color: #fff !important;
+        color: #173010 !important;
+        border-radius: 4px !important;
+    }​
+    .k-scheduler-views .k-current-view {​
+        display: block;
+    }​
+    .k-reset {​
+        padding: 10px;
+    }​
+    .k-calendar .k-state-selected .k-link {​
+        background-color: #33591E !important;
+    }​
+    .k-calendar-container {​
+        padding: 0;
+        background-color: #33591E !important;
+    }
+    .k-calendar .k-state-selected .k-link, .k-calendar .k-weekend.k-state-selected .k-link, .k-calendar:not(.k-calendar-infinite) .k-content .k-state-selected .k-link, .k-calendar:not(.k-calendar-infinite) .k-content .k-weekend .k-state-selected .k-link, .k-drag-clue, .k-event.k-state-selected {
+        color: #fff;
+        background-color: #33591E;
+        border-color: rgba(0,0,0,.1);
+    }
+    .k-calendar .k-nav-fast:active, .k-calendar .k-nav-next:active, .k-calendar .k-nav-prev:active {
+        color: #000;
+        background-color: #33591E;
+        border-color: rgba(0,0,0,.1);
+    }
+    .k-calendar .k-footer .k-nav-today {
+        color: #71767A;
+    }
+    .k-calendar-monthview, .k-calendar-view {
+        height: calc(320px + 2em) !important;
+    }​
     /*caixa de seleção dinâmica*/
     .k-input.k-textbox:focus, .k-textbox:focus {
         border-color: #33591E;
@@ -788,6 +829,7 @@ input[type=radio]:focus,
         color: #173010;
         font-size: 14px;
     }
+
         /*border-bottom*/
     .k-dropdown-wrap {
         border-color: #173010;
@@ -839,28 +881,39 @@ input[type=radio]:focus,
     }
 
     /*Rodapé*/
-    .panel-footer {
+    .crn-rodape .crn-dir {
+        background: url(../img/logo_ditec.png) no-repeat center right;
+    }
+    .crn-rodape {
         background: #507c3f;
-        background: url(../images/bg_rodape.png) no-repeat 95% center, -moz-linear-gradient(left, #507c3f 55%, #173010 100%);
-        background: url(../images/bg_rodape.png) no-repeat 95% center, -webkit-gradient(linear, left top, right top, color-stop(55%,#507c3f), color-stop(100%,#173010));
-        background: url(../images/bg_rodape.png) no-repeat 95% center, -webkit-linear-gradient(left, #507c3f 55%,#173010 100%);
-        background: url(../images/bg_rodape.png) no-repeat 95% center, -o-linear-gradient(left, #507c3f 55%,#173010 100%);
-        background: url(../images/bg_rodape.png) no-repeat 95% center, -ms-linear-gradient(left, #507c3f 55%,#173010 100%);
-        background: url(../images/bg_rodape.png) no-repeat 95% center, linear-gradient(to right, #507c3f 55%,#173010 100%);
+        background: url(../img/bg_rodape.png) no-repeat 95% center, -moz-linear-gradient(left, #507c3f 55%, #173010 100%);
+        background: url(../img/bg_rodape.png) no-repeat 95% center, -webkit-gradient(linear, left top, right top, color-stop(55%,#507c3f), color-stop(100%,#173010));
+        background: url(../img/bg_rodape.png) no-repeat 95% center, -webkit-linear-gradient(left, #507c3f 55%,#173010 100%);
+        background: url(../img/bg_rodape.png) no-repeat 95% center, -o-linear-gradient(left, #507c3f 55%,#173010 100%);
+        background: url(../img/bg_rodape.png) no-repeat 95% center, -ms-linear-gradient(left, #507c3f 55%,#173010 100%);
+        background: url(../img/bg_rodape.png) no-repeat 95% center, linear-gradient(to right, #507c3f 55%,#173010 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#507c3f', endColorstr='#173010',GradientType=1 );
         color: #FFF;
         border-bottom: 3px solid #4f7b3e;
     }
-    .panel-footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        z-index: 1;
-        min-height: 32px;
+    .crn-rodape .crn-dir {
+        float: right;
+        font-size: 0.9em;
+        line-height: 2.6em;
+        padding-right: 45px;
+        margin-right: 10px;
+        text-align: right;
     }
-    .panel-footer::before {
-        display: table;
-        content: " ";
+    .crn-rodape .crn-esq .crn-versao {
+        color: #A5BB9C;
+    }
+    .crn-rodape .crn-esq .crn-versao {
+        color: #A5BB9C;
+    }
+    .crn-rodape .crn-esq .crn-versao {
+        line-height: 0.8em;
+        font-size: 0.8em;
+        display: block;
     }
     /*FIM Rodapé*/
     .navbar .navbar-nav>li>a {
@@ -915,6 +968,10 @@ input[type=radio]:focus,
     .jumbotron .h1, .jumbotron h1 {
         font-size: 5rem;
     }
+    .crn-rodape {
+        position: fixed;
+        z-index: 1000;
+    }
 }
 @media(min-width:768px) {
     .jumbotron-fluid {
@@ -941,6 +998,20 @@ input[type=radio]:focus,
     }
     .carousel-indicators {
         bottom: 0px;
+    }
+    .crn-rodape {
+        position: fixed;
+        z-index: 1000;
+    }
+    .crn-rodape {
+        position: absolute;
+        z-index: auto;
+        min-height: 32px;
+        box-sizing: border-box;
+        padding: 5px;
+        width: 100%;
+        overflow: hidden;
+        bottom: 0;
     }
 }
 @media only screen and (max-width: 600px) {
