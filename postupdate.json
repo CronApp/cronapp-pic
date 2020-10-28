@@ -14,7 +14,12 @@
         "from": "node_modules/cronapp-pic/component/cronapp-menu-header-pic.components.json",
         "to": "${JAVA_HOME}/META-INF/cronapp-menu-header-pic.components.json",
         "replace":true
-    }
+    },
+    {
+      "from": "node_modules/cronapp-pic/component/cronapp-menu-footer-pic.components.json",
+      "to": "${JAVA_HOME}/META-INF/cronapp-menu-header-pic.components.json",
+      "replace":true
+  }
   ],
   "includes":[
     {
