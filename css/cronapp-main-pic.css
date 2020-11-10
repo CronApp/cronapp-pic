@@ -22,7 +22,7 @@ a:focus, a:hover {
     border: 0px none #ffffff;
     border-left: 1px solid #537e42;
     }
-.k-block ::selection, .k-panel ::selection, .k-widget ::selection, {
+.k-block ::selection, .k-panel ::selection, .k-widget ::selection {
     background-color: #537e42 !important;
     color: #fff !important;
     }
@@ -760,22 +760,22 @@ input[type=radio]:focus,
     .k-scheduler-toolbar, .k-scheduler-toolbar, .k-scheduler-toolbar a.k-link {
         background-color: #33591E !important;
         color: #fff;
-    }â€‹
-    .k-scheduler-views * {â€‹
+    }
+    .k-scheduler-views * {
         background-color: #fff !important;
         color: #173010 !important;
         border-radius: 4px !important;
-    }â€‹
-    .k-scheduler-views .k-current-view {â€‹
+    }
+    .k-scheduler-views .k-current-view {
         display: block;
-    }â€‹
-    .k-reset {â€‹
+    }
+    .k-reset {
         padding: 10px;
-    }â€‹
-    .k-calendar .k-state-selected .k-link {â€‹
+    }
+    .k-calendar .k-state-selected .k-link {
         background-color: #33591E !important;
-    }â€‹
-    .k-calendar-container {â€‹
+    }
+    .k-calendar-container {
         padding: 0;
         background-color: #33591E !important;
     }
@@ -794,7 +794,7 @@ input[type=radio]:focus,
     }
     .k-calendar-monthview, .k-calendar-view {
         height: calc(320px + 2em) !important;
-    }â€‹
+    }
     /*caixa de seleÃ§Ã£o dinÃ¢mica*/
     .k-input.k-textbox:focus, .k-textbox:focus {
         border-color: #33591E;
