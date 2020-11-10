@@ -246,7 +246,7 @@ input[type=radio]:focus,
     }
     /* fim TEXTO */
 
-    /* FORMULÁRIO */
+    /* FORMULÃRIO */
     .btn-fab {
         border-radius: 5px;
     }
@@ -260,7 +260,7 @@ input[type=radio]:focus,
     .k-autocomplete.k-state-focused {
         border-color: #33591E;
     }
-    /* FIM FORMULÁRIO*/
+    /* FIM FORMULÃRIO*/
 
     /* Button */
     .btn-default {
@@ -270,7 +270,7 @@ input[type=radio]:focus,
     button.btn-default:hover, button.btn-default:focus, button.btn-default:active {
         opacity: 1 !important;
         background: #282d57;
-        color: #173010 !important;
+        color: #fff!important;
         box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
     }
     .btn-primary {
@@ -349,7 +349,7 @@ input[type=radio]:focus,
     /* FIM Button */
 
     /*GRID*/
-        /*correcao visualização lowcode*/
+        /*correcao visualizaÃ§Ã£o lowcode*/
         div.k-grid-header {
         background-color: #33591E;
     }
@@ -446,7 +446,7 @@ input[type=radio]:focus,
     }
     /*FIM checkbox*/
 
-    /*Caixa de seleção dinamica*/
+    /*Caixa de seleÃ§Ã£o dinamica*/
     .dynamic-image-container {
         border-style: outset;
         border: 1px outset #537e42;
@@ -483,7 +483,7 @@ input[type=radio]:focus,
         font-weight: 500;
     }
 
-    /*Menu Dinâmico*/
+    /*Menu DinÃ¢mico*/
     .nav>li>a:focus, .nav>li>a:hover {
         text-decoration: none;
         background-color: #33591E;
@@ -496,7 +496,7 @@ input[type=radio]:focus,
     }
 
 
-    /*Acordeão*/
+    /*AcordeÃ£o*/
     .panel-default>.panel-heading {
         background-color: #f3f3ef;
         border-bottom: 1px solid #c8c8c8;
@@ -515,13 +515,13 @@ input[type=radio]:focus,
         color: #537e42 !important;
         font-weight: 500;
     }
-    /*FIM Acordeão*/
+    /*FIM AcordeÃ£o*/
     
-    /*Avaliação*/
+    /*AvaliaÃ§Ã£o*/
     .text-primary {
         color: #33591E;
     }
-    /*FIM Avaliação*/
+    /*FIM AvaliaÃ§Ã£o*/
     
     /*Banner*/
     .jumbotron {
@@ -598,7 +598,7 @@ input[type=radio]:focus,
             color: #fff;
             background: #537e42 !important;
         }
-        /*seleção mês*/
+        /*seleÃ§Ã£o mÃªs*/
         .bootstrap-datetimepicker-widget table td span.active {
             background-color: #537e42;
             color: #fff;
@@ -628,7 +628,7 @@ input[type=radio]:focus,
     bottom: 4px;
     right: 4px;
 }
-        /*lista de opções*/
+        /*lista de opÃ§Ãµes*/
         .k-radio:checked+.k-radio-label:after {
             background-color: #537e42;
         }
@@ -760,22 +760,22 @@ input[type=radio]:focus,
     .k-scheduler-toolbar, .k-scheduler-toolbar, .k-scheduler-toolbar a.k-link {
         background-color: #33591E !important;
         color: #fff;
-    }​
-    .k-scheduler-views * {​
+    }â€‹
+    .k-scheduler-views * {â€‹
         background-color: #fff !important;
         color: #173010 !important;
         border-radius: 4px !important;
-    }​
-    .k-scheduler-views .k-current-view {​
+    }â€‹
+    .k-scheduler-views .k-current-view {â€‹
         display: block;
-    }​
-    .k-reset {​
+    }â€‹
+    .k-reset {â€‹
         padding: 10px;
-    }​
-    .k-calendar .k-state-selected .k-link {​
+    }â€‹
+    .k-calendar .k-state-selected .k-link {â€‹
         background-color: #33591E !important;
-    }​
-    .k-calendar-container {​
+    }â€‹
+    .k-calendar-container {â€‹
         padding: 0;
         background-color: #33591E !important;
     }
@@ -794,8 +794,8 @@ input[type=radio]:focus,
     }
     .k-calendar-monthview, .k-calendar-view {
         height: calc(320px + 2em) !important;
-    }​
-    /*caixa de seleção dinâmica*/
+    }â€‹
+    /*caixa de seleÃ§Ã£o dinÃ¢mica*/
     .k-input.k-textbox:focus, .k-textbox:focus {
         border-color: #33591E;
     }
@@ -817,7 +817,7 @@ input[type=radio]:focus,
         background-color: #71767a !important; 
         opacity: 0.3;
     }
-    /*caixa de seleção fixa*/
+    /*caixa de seleÃ§Ã£o fixa*/
     .k-list .k-item.k-state-selected {
         color: #71767a;
     }
@@ -844,7 +844,7 @@ input[type=radio]:focus,
     .k-button {
         color: #173010;
     }
-    /*Avaliação*/
+    /*AvaliaÃ§Ã£o*/
         /*Temas cores*/
         .text-primary {
             color: #fff;
@@ -865,7 +865,7 @@ input[type=radio]:focus,
             color: #333;
         }
 
-    /*imagem dinâmica*/
+    /*imagem dinÃ¢mica*/
     .btn {
         color: #173010;
         background: #fff;
@@ -880,7 +880,7 @@ input[type=radio]:focus,
         color: #173010;
     }
 
-    /*Rodapé*/
+    /*RodapÃ©*/
     .crn-rodape .crn-dir {
         background: url(../img/logo_ditec.png) no-repeat center right;
     }
@@ -915,7 +915,7 @@ input[type=radio]:focus,
         font-size: 0.8em;
         display: block;
     }
-    /*FIM Rodapé*/
+    /*FIM RodapÃ©*/
     .navbar .navbar-nav>li>a {
         line-height: inherit;
         padding: 14px 15px 14px 10px;
@@ -1004,7 +1004,7 @@ input[type=radio]:focus,
         z-index: 1000;
     }
     .crn-rodape {
-        position: absolute;
+        position: relative;
         z-index: auto;
         min-height: 32px;
         box-sizing: border-box;
