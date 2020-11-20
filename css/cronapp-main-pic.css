@@ -1004,7 +1004,6 @@ input[type=radio]:focus,
         z-index: 1000;
     }
     .crn-rodape {
-        position: relative;
         z-index: auto;
         min-height: 32px;
         box-sizing: border-box;
