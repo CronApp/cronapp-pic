@@ -2,6 +2,11 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
     }
+.fill {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
 .main-view:focus { 
     outline: none;
     }
@@ -25,7 +30,7 @@ a:focus, a:hover {
 .k-block ::selection, .k-panel ::selection, .k-widget ::selection {
     background-color: #537e42 !important;
     color: #fff !important;
-    }
+}
 
 /*Tela de Login*/
 
@@ -73,7 +78,7 @@ a:focus, a:hover {
 }
 
 .modal-body {
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 .modal-body {
     position: relative;
@@ -769,10 +774,9 @@ input[type=radio]:focus,
     .k-scheduler-views .k-current-view {
         display: block;
     }
-    /*
     .k-reset {
-         padding: 10px; 
-    }*/
+        padding: 10px;
+    }
     .k-calendar .k-state-selected .k-link {
         background-color: #33591E !important;
     }
@@ -925,6 +929,7 @@ input[type=radio]:focus,
 
 
 @media(max-width:768px) {
+
     .navbar-nav {
         display: inline-block;
         width: 100%;
@@ -970,8 +975,18 @@ input[type=radio]:focus,
         font-size: 5rem;
     }
     .crn-rodape {
-        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
         z-index: 1000;
+        bottom: 0;
+        width: 100%;
+        margin-top: 30px;
+        position: fixed;
+    }
+    
+    .k-grid {
+        overflow-x: auto!important;
     }
 }
 @media(min-width:768px) {
@@ -1001,26 +1016,17 @@ input[type=radio]:focus,
         bottom: 0px;
     }
     .crn-rodape {
-        position: fixed;
-        z-index: 1000;
-    }
-    .crn-rodape {
+        position: absolute;
+        bottom: 0;
         z-index: 999;
         min-height: 32px;
         box-sizing: border-box;
         padding: 5px;
         width: 100%;
-        overflow: hidden;
-        bottom: 0;
     }
-    .main-view {
-        box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-        background:  #ffffff;
-        margin: 30px;
-        margin-bottom: 80px;
-        display: inline-block;
-        width: calc(100% - 60px);
-    }
+  .crn-rodape {
+      position: fixed !important;
+  }
 }
 @media only screen and (max-width: 600px) {
     .k-pager-wrap .k-pager-nav, .k-pager-wrap>.k-link {
@@ -1049,18 +1055,23 @@ input[type=radio]:focus,
         margin-right: 18px;
     }
     .main-view {
+        position: relative;
         box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
         background: #ffffff;
-        margin-top: 30px;
+        margin: 30px;
+        padding: 15px;
+        width: calc(100% - 60px);
+        padding: 15px;
     }
     .container-fluid {
         padding-right: -15px;
         padding-left: -15px;
     }
-
+    .crn-rodape {
+      margin-top: 0em;
+      position: relative !important;
+  }
 }
-
-
 @media(min-width: 768px) {
 	.crn-custom-header .crn-custom-header--topoAplicacao {
 		min-height: 135px;
@@ -1074,21 +1085,35 @@ input[type=radio]:focus,
     }
 
     .crn-custom-header--nome {
-    font-family: 'Source Sans Pro', sans-serif !important;
-    color: #FFF;
-    border-color: #d6dc48 !important;
-    padding: 0.25em 0.4em;
-    margin-left: 0.35em;
-    border-left: 2px solid;
-    font-size: 0.7em !important;
-    display: inline;
+        font-family: 'Source Sans Pro', sans-serif !important;
+        color: #FFF;
+        border-color: #d6dc48 !important;
+        padding: 0.25em 0.4em;
+        margin-left: 0.35em;
+        border-left: 2px solid;
+        font-size: 0.7em !important;
+        display: inline;
     }
     
     .crn-custom-header--sigla {
-    color: #FFF;
-    font-size: 1em;
-    font-weight: bold;
-    white-space:nowrap;
-}
+        color: #FFF;
+        font-size: 1em;
+        font-weight: bold;
+        white-space:nowrap;
+    }
+    .main-view {
+        box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+        background: #ffffff;
+        margin-top: 3em !important;
+        margin-bottom: 4em !important;
+        display: inline-block !important;
+        width: calc(100% - 60px);
+        padding: 15px;
+    }
+    .k-grid {
+        /* max-height: 500px;  */
+        overflow: auto;
+    }
+
 }
 
