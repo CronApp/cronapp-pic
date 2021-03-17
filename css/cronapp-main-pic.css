@@ -774,9 +774,6 @@ input[type=radio]:focus,
     .k-scheduler-views .k-current-view {
         display: block;
     }
-    .k-reset {
-        padding: 10px;
-    }
     .k-calendar .k-state-selected .k-link {
         background-color: #33591E !important;
     }
