@@ -1111,9 +1111,9 @@ input[type=radio]:focus,
         /* max-height: 500px;  */
         overflow: auto;
     }
-    button[disabled] {
-        opacity: 0.5 !important;
-    }
+}
 
+button[disabled] {
+    opacity: 0.5 !important;
 }
 
