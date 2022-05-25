@@ -1,7 +1,7 @@
 {
   "name": "cronapp-pic",
   "version": "1.0.16",
-  "description": "Cronapp styles designed by to be in accordance with camra PIC",
+  "description": "Cronapp styles designed by to be in accordance with camara PIC",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,7 @@
     "cronapp",
     "pic"
   ],
-  "author": "Rodrigo Santos Reis",
+  "author": "Cronapp",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CronApp/cronapp-pic/issues"
