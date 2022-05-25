@@ -1,6 +1,6 @@
 {
   "name": "cronapp-pic",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Cronapp styles designed by to be in accordance with camra PIC",
   "main": "index.js",
   "scripts": {
