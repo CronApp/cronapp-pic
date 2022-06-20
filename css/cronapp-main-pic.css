@@ -169,6 +169,12 @@ a:focus, a:hover {
     height: 34px;
     padding: 6px 12px;
 }
+
+.form-group .k-dropdown,
+.form-group .k-combobox {
+    height: 34px;
+}
+
 .k-textbox.form-control:focus{
     border-color: #33591E;
 
