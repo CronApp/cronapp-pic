@@ -165,6 +165,7 @@ a:focus, a:hover {
     margin-left: 2px;
 }
 
+.form-group .k-dropdown,
 .form-group .k-combobox,
 .k-textbox.form-control {
     height: 34px;
