@@ -16,6 +16,25 @@ a {
 a:focus, a:hover {
     color: #0E64B5;
     }
+
+.menu-lateral{
+    font-family: 'Source Sans Pro', sans-serif !important;
+    float: right;
+    padding-top: 60px;
+    display: block;
+    margin-right: 30px;
+    font-size: 1.2em;
+    background: none;
+    width: auto;
+    color: white !important;
+    text-align: right;
+}
+.menu-lateral a{
+    color: white !important;
+}
+ul.none {
+    list-style-type: none;
+}
 /*scrool*/
 ::-webkit-scrollbar-thumb {
     background: #537e42;
@@ -224,6 +243,10 @@ input[type=radio]:focus,
         background-color: #173010;
         border-top: 2px solid #fff;
     }
+    .navbar-default .navbar-nav ul.dropdown-menu li a:hover {
+        color: #fff !important;
+        background-color: #cecece4f !important;
+    }
     .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
         color: #fff;
         background-color: #173010;
@@ -237,11 +260,15 @@ input[type=radio]:focus,
         clear: both;
         font-weight: 400;
         line-height: 1.42857143;
-        color: #fff;
+        color: #fff !important;
         white-space: nowrap;
     }
     .caret {
         margin-left: 5px;
+    }
+
+    .navbar-default .navbar-nav ul.dropdown-menu a i, .navbar-default .navbar-nav ul.dropdown-menu li a {
+        color: #fff !important;
     }
 
 /*****************COMPONENTES IDE***********************/
@@ -932,6 +959,9 @@ input[type=radio]:focus,
 
 
 @media(max-width:768px) {
+    .crn-custom-header--topoAplicacao {
+        display: none;
+    }
 
     .navbar-nav {
         display: inline-block;
@@ -1074,6 +1104,9 @@ input[type=radio]:focus,
       margin-top: 0em;
       position: relative !important;
   }
+    .crn-rodape {
+        position: fixed !important;
+    }
 }
 @media(min-width: 768px) {
 	.crn-custom-header .crn-custom-header--topoAplicacao {
