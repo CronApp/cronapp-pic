@@ -305,6 +305,9 @@ input[type=radio]:focus,
         color: #fff !important;
         background: #173010 !important;
     }
+    .btn-default i {
+        color: #fff !important;
+    }
     button.btn-default:hover, button.btn-default:focus, button.btn-default:active {
         opacity: 1 !important;
         background: #282d57;
@@ -314,6 +317,9 @@ input[type=radio]:focus,
     .btn-primary {
         color: #173010!important;
         background: #fff !important;
+    }
+    .btn-primary i{
+        color: #173010!important;
     }
     button.btn-primary:hover, button.btn-primary:focus, button.btn-primary:active {
         opacity: 1 !important;
@@ -325,6 +331,9 @@ input[type=radio]:focus,
         color: #173010 !important;
         background: #D6DC48 !important;
     }
+    .btn-info i{
+        color: #173010 !important;
+    }
     button.btn-info:hover, button.btn-info:focus, button.btn-info:active {
         opacity: 1 !important;
         background: #D6DC48;
@@ -335,6 +344,9 @@ input[type=radio]:focus,
         color: #fff !important;
         background: #33591E !important;
     }
+    .btn-success i{
+        color: #fff !important;
+    }
     button.btn-success:hover, button.btn-success:focus, button.btn-success:active {
         opacity: 1 !important;
         background: #33591e;
@@ -344,6 +356,9 @@ input[type=radio]:focus,
     .btn-danger {
         color: #fff !important;
         background: #71767A !important;
+    }
+    .btn-danger i{
+        color: #fff !important;
     }
     button.btn-danger:hover, button.btn-danger:focus, button.btn-danger:active {
         opacity: 1 !important;
@@ -358,6 +373,9 @@ input[type=radio]:focus,
         color: #fff !important;
         background: #537e42 !important;
     }
+    .btn-warning i{
+        color: #fff !important;
+    }
     button.btn-warning:hover, button.btn-warning:focus, button.btn-warning:active {
         opacity: 1 !important;
         background: #71767a;
@@ -368,6 +386,9 @@ input[type=radio]:focus,
         color: #fff !important;
         background: #0E64B5 !important;
     }
+    .btn-light i{
+        color: #fff !important;
+    }
     button.btn-light:hover, button.btn-light:focus, button.btn-light:active {
         opacity: 1 !important;
         background: #0E64B5;
@@ -377,6 +398,9 @@ input[type=radio]:focus,
     .btn-link {
         color: #fff !important;
         background: #114C85 !important;
+    }
+    .btn-link i{
+        color: #fff !important;
     }
     button.btn-link:hover, button.btn-link:focus, button.btn-link:active {
         opacity: 1 !important;
